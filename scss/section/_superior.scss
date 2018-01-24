@@ -1,0 +1,40 @@
+.superior {
+  background-image: url("../img/back/best-bg.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.superior__content{
+  text-align: center;
+  height: 100%;
+  margin-top: -126px;
+  display: flex;
+  justify-content: center;
+}
+
+.superior__list{
+  display: flex;
+}
+
+.superior__item{
+  max-width: rem(262px);
+  margin: rem(8px);
+}
+.section__title--superior {
+  color: #2f3234;
+  padding: 0;
+  margin-bottom: rem(52px);
+}
+
+.superior__name{
+    font-family: lifehack, cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: rem(21px);
+    margin-bottom: rem(13px);
+}
