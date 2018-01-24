@@ -76,12 +76,12 @@ ul {
   font-weight: 500;
   line-height: 1.42;
   min-width: 7rem;
-  padding: 0.71429rem 1.21429rem;
+  padding: 0.59439rem 0.8420rem;
   border-radius: 0.35714rem;
   background-color: #e45028;
   color: #fff;
   text-decoration: none;
-  font-size: 0.92857rem;
+  font-size: 0.82857rem;
   font-weight: 500;
   line-height: 1.42;
   text-transform: uppercase;
@@ -109,7 +109,8 @@ ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 0.85714rem; }
+  padding-top: 1.25714rem;
+  margin-left: -2.28571rem; }
 
 .header__logo {
   margin-right: auto; }
@@ -179,14 +180,19 @@ ul {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding-bottom: 15%; }
+  padding-bottom: 13%; }
 
 .main__description, .main__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-preferred-size: 50%;
-  flex-basis: 50%; }
+  flex-basis: 50%;
+  width: 90%;
+  margin-top: -4px; }
+
+.main__subtitle {
+  font-size: 62px; }
 
 .main__description {
   -webkit-box-pack: center;
@@ -204,14 +210,18 @@ ul {
   font-weight: 300;
   line-height: 1.42;
   color: #f9b43b;
-  padding-top: 60px; }
+  padding-top: 78px; }
 
 .main__description {
   font-family: 'Lifehack';
   font-size: 4.64286rem;
   font-weight: 400;
   line-height: 1;
-  color: #ffffff; }
+  color: #ffffff;
+  margin-top: -19px; }
+
+.main__arrow {
+  width: 53px; }
 
 .main__arrow-scroll {
   width: 29px;
@@ -249,9 +259,10 @@ ul {
   margin: 6px 6px; }
 
 .pagination__list {
-  top: 5.625rem;
-  right: 3%;
-  position: absolute; }
+  top: 16%;
+  right: 14%;
+  position: fixed;
+  z-index: 200; }
 
 .pagination__page-one {
   border-radius: 50%;
@@ -279,7 +290,6 @@ ul {
 .superior__content {
   text-align: center;
   height: 100%;
-  margin-top: -126px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +309,7 @@ ul {
 .section__title--superior {
   color: #2f3234;
   padding: 0;
-  margin-bottom: 3.71429rem; }
+  margin-top: -4.5625rem; }
 
 .superior__name {
   font-family: lifehack, cursive;
