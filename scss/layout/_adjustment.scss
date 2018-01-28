@@ -36,3 +36,9 @@
     background-color: darken($orange, 11%); 
    }
 }
+.section {
+  height: 100vh;
+  min-width: 940px;
+  min-height: 650px;
+  background-color: rgba(0,0,0,0.33);
+}
