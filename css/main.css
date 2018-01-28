@@ -249,30 +249,6 @@ ul {
   color: #fff;
   position: relative; }
 
-.pagination__elevation {
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: #fff;
-  margin: 6px 6px; }
-
-.pagination__list {
-  top: 16%;
-  right: 14%;
-  position: fixed;
-  z-index: 200; }
-
-.pagination__page-one {
-  border-radius: 50%;
-  border: 2px solid #fff; }
-
-.pagination__page {
-  border: 2px solid transparent; }
-
 .superior {
   background-image: url("../img/back/best-bg.png");
   height: 100%;
@@ -733,39 +709,72 @@ ul {
 .form__checkbox-visible {
   display: none; }
 
-.fixed-menu {
+.form__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.form__submit_clear {
+  margin-left: 10px;
+  text-decoration: none;
+  font-style: 300;
+  color: #fff; }
+
+.fixed {
+  margin: 0;
+  padding: 0;
   position: fixed;
-  top: 6.42857rem;
-  right: 3%;
-  z-index: 200; }
+  top: 91px;
+  right: 50px; }
 
-.fixed-menu__item {
-  display: block;
-  border: 0.07143rem solid transparent;
-  width: 1.14286rem;
-  height: 1.14286rem;
-  border-radius: 0.57143rem;
-  background-color: transparent;
-  position: relative;
+.fixed__item {
   margin-bottom: 0.35714rem; }
-  .fixed-menu__item.active {
-    border-color: #fff; }
 
-.fixed-menu__link {
+.fixed__link {
+  position: relative;
   display: block;
-  width: 0.42857rem;
-  height: 0.42857rem;
-  border-radius: 0.21429rem;
-  background-color: #fff;
+  width: 16px;
+  height: 16px; }
+  .fixed__link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .fixed__link:hover::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.fixed__link.active::after {
+  content: "";
   position: absolute;
+  display: block;
   top: 50%;
   left: 50%;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #fff;
+  border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: color 0.5s;
-  -o-transition: color 0.5s;
-  transition: color 0.5s; }
+  transform: translate(-50%, -50%); }
 
 .map {
   background: url("../img/back/map.png");

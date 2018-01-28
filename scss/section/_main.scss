@@ -132,25 +132,3 @@
   color: #fff;
   position: relative;
 }
-
-.pagination__elevation {
-  transform: translate(-50%, -50%);
-  content: "";
-    @include circle(6px, #fff);
-    margin: 6px 6px;
-}
-
-.pagination__list{
-    top: 16%;
-    right: 14%;
-    position: fixed;
-    z-index: 200;
-}
-
-.pagination__page-one{
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
-.pagination__page {
-  border: 2px solid transparent;
-}

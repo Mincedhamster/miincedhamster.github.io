@@ -123,3 +123,13 @@
 .form__checkbox-visible {
     display: none;
 }
+
+.form__btns{
+  display: flex;
+}
+.form__submit_clear{
+  margin-left: 10px;
+  text-decoration: none;
+  font-style: 300;
+  color: $white;
+}
