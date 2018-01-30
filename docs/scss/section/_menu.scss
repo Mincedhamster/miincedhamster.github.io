@@ -1,0 +1,74 @@
+.menu {
+  background: url("../img/back/burgers-munu.jpg");
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ }
+
+.menu-acco {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+.menu__title {
+  color: #fff;
+  font-size: 72px;
+  margin-bottom: 12px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.menu-acco__item {
+  height: 100%;
+  display: flex;
+
+	&.active {
+		.menu-acco__trigger-text {
+		color: $yellow;
+		}
+	}
+}
+
+.menu-acco__trigger {
+	width: 80px;
+	display: block;
+	height: 100%;
+	text-decoration: none;
+  position: relative;
+  
+}
+
+.menu-acco__trigger-text {
+  font-family: Gagalin;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  left: 50%;
+  top: 100%;
+  margin-top: -20px;
+}
+
+
+.menu-acco__content {
+	height: 100%;
+	background: rgba(#2f3234, .93);
+	width: 0;
+	overflow: hidden;
+}
+
+.menu-acco__text {
+  font-size: 14px;
+  color: #fff;
+  padding: 60px 30px;
+  width: 100%;
+  line-height: 1.8;
+  display: none;
+}

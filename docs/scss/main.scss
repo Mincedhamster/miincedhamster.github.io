@@ -1,0 +1,27 @@
+
+//config  
+
+@import "config/_variables.scss";
+@import "config/_mixins.scss";
+
+//layout
+
+@import "layout/_font.scss";
+@import "layout/_base.scss";
+@import "layout/_adjustment.scss";
+
+//section
+
+@import "section/_main.scss";
+@import "section/_superior.scss";
+@import "section/_comments.scss";
+@import "section/_team.scss";
+@import "section/_menu.scss";
+@import "section/_order.scss";
+@import "section/_fixed-menu.scss";
+@import "section/_map.scss";
+@import "section/_footer.scss";
+
+
+//normalize
+@import "config/normalize.scss";

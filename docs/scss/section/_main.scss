@@ -1,0 +1,134 @@
+.main {
+  background-image: url("../img/back/hero_bg.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative; 
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.05714rem;
+  margin-left: rem(-32px); 
+}
+
+.header__logo {
+  margin-right: auto;
+} 
+
+.nav {
+  margin-right: rem(15px); 
+}
+  
+.nav__list {
+  margin: 0;
+  padding: 0; 
+}
+
+.nav__item {
+  white-space: nowrap; 
+  display: inline-block;
+  vertical-align: middle;
+  &:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    @include circle(5px, #fff);
+    margin: 0 12px;
+  }
+  &:last-child:after {
+    display: none;
+  }
+}
+.nav__link {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.42;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .7s;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.main__container {
+  align-items: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main__content {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex: .8;
+  margin-bottom: rem(88px);
+}
+
+.main__description, .main__img {
+  display: flex;
+  flex-basis: 50%;
+  width: 50%;
+  margin-top: -17px
+}
+.main__subtitle{
+  font-size: 62px;
+}
+.main__description {
+  justify-content: center;
+  flex-direction: column;
+ }
+
+.section__title {
+  margin: 0;
+  font-family: 'Gagalin';
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1.42;
+  color: #f9b43b;
+  padding-top: 78px;
+}
+
+.main__description {
+  font-family: 'Lifehack';
+  font-size: rem(65px);
+  font-weight: 400;
+  line-height: 1;
+  color: #ffffff; 
+  margin-top: -19px
+}
+.main__arrow{
+  width: 53px;
+}
+.main__arrow-scroll{
+  width: 29px;
+  background: url(../img/icons/arrow-scroll.png);
+  background-repeat: no-repeat;
+  height: 14px;
+  position: absolute;
+}
+
+.fixedmenu__item{
+  margin-bottom: 5px;
+}
+
+.fixedmenu__item:last-child {
+  margin-bottom: 0;
+}
+
+.fixedmenu__item, .fixedmenu__item-link is-active {
+  display: block;
+  height: 16px;
+  width: 16px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
