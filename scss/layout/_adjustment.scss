@@ -22,12 +22,12 @@
   font-weight: 500;
   line-height: 1.42;
   min-width: rem(98px);
-  padding: rem(10px) rem(17px);
+  padding:0.59439rem 0.8420rem;
   border-radius: rem(5px);
   background-color: #e45028;
   color: #fff;
   text-decoration: none;
-  font-size: rem(13px);
+  font-size: 0.82857rem;
   font-weight: 500;
   line-height: 1.42;
   text-transform: uppercase;
@@ -35,4 +35,10 @@
   &:hover {
     background-color: darken($orange, 11%); 
    }
+}
+.section {
+  height: 100vh;
+  min-width: 940px;
+  min-height: 650px;
+  background-color: rgba(0,0,0,0.33);
 }

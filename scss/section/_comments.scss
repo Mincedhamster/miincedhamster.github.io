@@ -9,8 +9,8 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    align-content: stretch;
     height: 100%;
+    width: 100%;
 }
 
 .comments__item {
@@ -18,9 +18,12 @@
     height: 50%;
     width: 25%;
     position: relative;
+    filter: grayscale(100%);
+
     &:hover .comments__textblock{
     opacity: 1;
     background-color: rgba(20,20,20,0.7);
+    transition: 0.7s;
     }
 }
 .comments__photo {
@@ -56,12 +59,12 @@
 }
 
 .comments__textblock:hover{
-font-family: ubuntu, Verdana, Arial, sans-serif;
-font-weight: 300;
-font-style: normal;
-line-height: rem(21px);
-background: rgba(0, 0, 0, 0.7);
-opacity: 1;
+    font-family: ubuntu, Verdana, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: rem(21px);
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
 }
 .comments__link {
   font-size: rem(13px);

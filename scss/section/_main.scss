@@ -11,7 +11,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: rem(12px); 
+  padding-top: 1.05714rem;
+  margin-left: rem(-32px); 
 }
 
 .header__logo {
@@ -58,26 +59,29 @@
 }
 
 .main__container {
-  height: 100%;
   align-items: center; 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .main__content {
   width: 100%;
   align-items: center;
   display: flex;
-  flex-grow: 1;
-  padding-bottom: 15%; 
+  flex: .8;
+  margin-bottom: rem(88px);
 }
 
 .main__description, .main__img {
   display: flex;
   flex-basis: 50%;
+  width: 50%;
+  margin-top: -17px
 }
-
+.main__subtitle{
+  font-size: 62px;
+}
 .main__description {
   justify-content: center;
   flex-direction: column;
@@ -90,7 +94,7 @@
   font-weight: 300;
   line-height: 1.42;
   color: #f9b43b;
-  padding-top: 60px;
+  padding-top: 78px;
 }
 
 .main__description {
@@ -99,50 +103,32 @@
   font-weight: 400;
   line-height: 1;
   color: #ffffff; 
+  margin-top: -19px
 }
-
+.main__arrow{
+  width: 53px;
+}
 .main__arrow-scroll{
   width: 29px;
   background: url(../img/icons/arrow-scroll.png);
   background-repeat: no-repeat;
   height: 14px;
-  display: flex;
-  padding: 14px;
+  position: absolute;
 }
 
-.pagination__item {
+.fixedmenu__item{
   margin-bottom: 5px;
 }
 
-.pagination__item:last-child {
+.fixedmenu__item:last-child {
   margin-bottom: 0;
 }
 
-.pagination__page, .pagination__page-one {
+.fixedmenu__item, .fixedmenu__item-link is-active {
   display: block;
   height: 16px;
   width: 16px;
   text-decoration: none;
   color: #fff;
   position: relative;
-}
-
-.pagination__elevation {
-  transform: translate(-50%, -50%);
-  content: "";
-    @include circle(6px, #fff);
-    margin: 6px 6px;
-}
-
-.pagination__list{
-    top: 5.625rem;
-    right: 3%;
-    position: absolute;
-}
-.pagination__page-one{
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
-.pagination__page {
-  border: 2px solid transparent;
 }

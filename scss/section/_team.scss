@@ -1,0 +1,78 @@
+.team {
+  background: url("../img/back/team.jpg");
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ }
+
+ .team__container{
+ 	position: absolute;
+ 	width: 50%;
+ 	top: 0;
+ 	bottom: 0;
+ 	right: 0;
+ 	background: rgba(#2f3234, .93);
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+
+ }
+
+.team__content{
+ width: 72%
+}
+
+.team-accordeon__content {
+  display: flex;
+}
+.team-accordeon__content p{
+	margin: auto;
+}
+.team-accordeon__text {
+  color: #fff;
+}
+.team-accordeon__img{
+	width: 100px;
+	height: 100px;
+}
+
+.team-accordeon__trigger{
+	display: flex;
+    align-items: center;
+    text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	font-family: Gagalin;
+
+	&:before {
+    content: "";
+    height: 0;
+    width: 0;
+    border: 6px solid transparent;
+    border-top-color: $yellow;
+    border-bottom-color: 0px;
+
+  }
+}
+
+.team-accordeon__members{
+	height: 0;
+	overflow: hidden;
+	display: flex;
+}
+
+.team-accordeon__item_active {
+	.team-accordeon__trigger {
+    color: $yellow;
+
+	    &:before {
+	      transform: rotate(-180deg);
+	    }
+  	}
+    .team-accordeon__members {
+      height: auto;
+ 
+  }
+}
