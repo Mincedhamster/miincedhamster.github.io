@@ -8,7 +8,7 @@
  }
 .section__title--order{
   margin-bottom: 2.02429rem;
-  margin-top: rem(114px);
+  margin-top: 7.14286rem;
 
   @include tablets{
    margin-top: 2.14286rem;
@@ -29,7 +29,7 @@
 	color:#fff;
 	display: flex;
   justify-content: space-between;
-  width: 95%;
+   width: 100%;
 
   @include tablets{
     display: flex;
@@ -79,7 +79,7 @@
 
 .form__input--active{
    height: rem(98px);
-   margin-bottom: rem(17px);
+   margin-bottom: 0.91429rem;
 }
 
 .form__section{

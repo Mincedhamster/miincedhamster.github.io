@@ -24,6 +24,7 @@
   @include phones {
     flex-direction: column;
  }
+
 }
 .superior__item{
   max-width: rem(262px);
@@ -45,14 +46,18 @@
 .section__title--superior {
   color: #2f3234;
   padding: 0;
-  margin-right: 1.57143rem;
   margin-top: 1.71429rem;
   margin-bottom: 23px;
 
   @include phones{
       font-size: 3.5rem;
       margin-bottom: 30px;
+      margin-top: -3.28571rem;
      }
+
+     @include tablets {
+     margin-right: 0
+ }
 }
 
 .superior__name{
@@ -68,12 +73,10 @@
 
 }
 .superior__img{
-   margin-bottom: rem(18px);
     height: rem(100px);
 }
 
 .superior__img--active{
-    margin-bottom: 1.28571rem;
     height: 7.14286rem;
 
     @include phones{
