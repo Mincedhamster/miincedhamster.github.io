@@ -1,0 +1,16 @@
+.menu {
+  background: url("../img/back/map.png");
+  background-position: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.footer {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url("../img/back/footer.png"); }
