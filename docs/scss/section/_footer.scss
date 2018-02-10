@@ -1,6 +1,8 @@
 .footer {
-    background-color: #0f0f0f;
+    background-image: url("../img/back/footer.png");
     position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
     bottom: 0;
     left: 0;
     right: 0;
@@ -11,25 +13,51 @@
     align-items: center;
 }
 
-.footer__container{
-  width: 940px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .footer__left{
-    width: 50%;
     display: inline-block;
+
+
+    @include phones{
+     font-size: 1.05714rem;
+     text-align: center;
+}
 
 }
 .footer__contacts{
     display: flex;
     flex-direction: column;
-    padding: rem(10px) 0;
+    padding: 0.1429rem 0;
+    padding-top:rem(8px);
 }
 
 .footer__right{
-    width: 50%;
     text-align: right;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+
+    @include phones{
+     display: flex;
+     flex-direction: column;
+}
+
+}
+.footer__address{
+    color:#fff;
+    margin-bottom: 0.1429rem;
+}
+.footer__phone{
+    font-family: Ubuntu, Arial, sans-serif;
+    font-weight: 700;
+    color: #e45028;
+    text-decoration: none;
+}
+.footer__phone-icon{
+    fill: #e45028;
+    width: rem(10px);
+    height: rem(10px);
+}
+.footer__list{
+  padding: 1.02857rem 0;
 }

@@ -1,0 +1,197 @@
+.burgers{
+  background-image: -moz-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+  background-image: -ms-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-item: center;
+  justify-content: center;
+}
+
+.burgers__arrow{
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: rem(34px);
+	height: rem(27px);
+	background-position: 50%;
+	cursor: pointer;
+
+
+}
+.arrow-right{
+	background-image: url("../img/burgers/arrow-scroll-r.png");
+}
+.arrow-left{
+	background-image: url("../img/burgers/arrow-scroll-l.png");
+}
+.burgers__slider{
+	display: flex;
+	align-items: center;
+	@include tablets{
+		flex-direction: column;
+	}
+}
+.burgers__content{
+	justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 75%;
+    max-width: 100%;
+}
+.burgers__left{
+	width: 56%;
+	position: relative;
+
+	@include tablets{
+		width: 70%;
+ 
+    }
+
+    @include phones{
+		width: 100%;
+ 
+    }
+
+
+}
+.burgers__burger{
+	width: 100%;
+}
+.burgers__image{
+	position: relative;
+}
+.burgers__image-js{
+	position: absolute;
+	top: rem(-69px);
+    left: rem(27px);
+	width: 5.42857rem;
+	height: 5.42857rem;
+	background-color: #f08c33;
+	border-radius: 10px;
+	cursor: pointer;
+	 @include tablets{
+    position: relative;
+    top: 0rem;
+    }
+		&:after{
+		    display: inline-block;
+		    width: 100%;
+		    content: "состав";
+		    text-align: center;
+		    margin: rem(10px) auto;
+		    font-size: 0.875rem;
+		    font-family: "Gagalin";
+		    color: #fff;
+		    line-height: 0.008;
+	}
+
+}
+.burgers__img{
+	padding: 0.72857rem 1.2rem 0;
+}
+.burgers__kkal{
+	position: absolute;
+	width: rem(60px);
+	height: rem(75px);
+	left: rem(32px);
+    bottom: rem(-35px);
+    @include tablets{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    }
+}
+.section__title--burgers{
+	color: #fff;
+    font-family: "Gagalin";
+    line-height: 0.889;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 2.57143rem;
+    @include tablets{
+    	margin: rem(10px) auto;
+    	text-align: center;
+    }
+}
+.burgers__right{
+	width: 53%;
+	 @include tablets{
+    	width: 100%;
+    }
+}
+.burgers__description{
+  font-family: "Ubuntu";
+  line-height: 1.714;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 2.57143rem;
+  @include tablets{
+  	    text-align: center;
+  }
+}
+.burgers__cost{
+  font-family: "Gagalin";
+  display: inline-block;
+  font-size: 1.97143rem;
+  color: rgb(227, 80, 40);
+  line-height: 0.39;
+  text-align: left;
+	.burgers__up{
+		font-size: 4.07143rem;
+	}
+	
+}
+.burgers__btn-slider{
+	background-color: #e45028;
+	display: inline-block;
+	width: rem(97px);
+	height: rem(35px);
+	margin-left: rem(25px);
+	font-size: 13px;
+  	font-family: "Ubuntu";
+}
+.burgers__down{
+	vertical-align: bottom;
+	@include tablets{
+		display: flex;
+    	justify-content: center;
+	}
+}
+
+.burgers__menu{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+    justify-content: space-between;
+    height: 130%;
+    left: rem(-23px);
+    top: -1rem;
+    
+	@include tablets{
+		flex-direction: row;
+		width: 120%;
+		top: -4.5rem;
+		align-items: space-between;
+		left: -4.64286rem
+	}
+}
+
+
+.burgers__btn-slider{
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: middle;
+	padding: rem(10px) rem(16px);
+	background-color: #e45028;
+	color: #fff;
+	border-radius: 7px;
+	border: 0;
+	font-family: "Ubuntu", Arial, sans-serif;
+	transition: .7s;
+	cursor: pointer;
+	margin-left: rem(10px);
+	&:hover{
+		background-color: darken(#e45028, 20%);
+	}
+}

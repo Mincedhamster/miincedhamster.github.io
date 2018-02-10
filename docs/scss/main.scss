@@ -4,11 +4,17 @@
 @import "config/_variables.scss";
 @import "config/_mixins.scss";
 
+
+//resolutions
+$tablets: 768px;
+$phones: 480px;
+
 //layout
 
 @import "layout/_font.scss";
 @import "layout/_base.scss";
 @import "layout/_adjustment.scss";
+@import "layout/_sprite.scss";
 
 //section
 
@@ -21,6 +27,7 @@
 @import "section/_fixed-menu.scss";
 @import "section/_map.scss";
 @import "section/_footer.scss";
+@import "section/_burgers.scss";
 
 
 //normalize
