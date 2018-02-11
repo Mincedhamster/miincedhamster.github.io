@@ -3,9 +3,8 @@
   background-image: -webkit-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
   background-image: -ms-linear-gradient( 90deg, rgb(249,180,59) 0%, rgb(235,140,56) 48%, rgb(249,180,59) 74%);
   position: relative;
-  height: 100%;
   display: flex;
-  align-item: center;
+  align-items: center;
   justify-content: center;
 }
 
@@ -28,6 +27,7 @@
 .burgers__slider{
 	display: flex;
 	align-items: center;
+	justify-content: space-around;
 	@include tablets{
 		flex-direction: column;
 	}
@@ -36,15 +36,16 @@
 	justify-content: center;
     align-items: center;
     display: flex;
-    width: 75%;
+    width: 95%; 
     max-width: 100%;
+    justify-content: space-between;
 }
 .burgers__left{
-	width: 56%;
+	width: 40%;
 	position: relative;
 
 	@include tablets{
-		width: 70%;
+		width: 60%;
  
     }
 
@@ -56,7 +57,7 @@
 
 }
 .burgers__burger{
-	width: 100%;
+  max-width: 100%;
 }
 .burgers__image{
 	position: relative;
@@ -67,7 +68,7 @@
     left: rem(27px);
 	width: 5.42857rem;
 	height: 5.42857rem;
-	background-color: #f08c33;
+	background-color: rgba(240, 140, 51, .7);
 	border-radius: 10px;
 	cursor: pointer;
 	 @include tablets{
@@ -115,9 +116,9 @@
     }
 }
 .burgers__right{
-	width: 53%;
+	width: 40%;
 	 @include tablets{
-    	width: 100%;
+    	width: 78%;
     }
 }
 .burgers__description{
@@ -167,14 +168,22 @@
     height: 130%;
     left: rem(-23px);
     top: -1rem;
+
+   
     
 	@include tablets{
 		flex-direction: row;
 		width: 120%;
-		top: -4.5rem;
+		top: -3.5rem;
 		align-items: space-between;
 		left: -4.64286rem
 	}
+
+	 @include phones{
+    top: rem(-20px);
+    left: -2.64286rem;
+    width: 110%;
+    }
 }
 
 
@@ -190,7 +199,6 @@
 	font-family: "Ubuntu", Arial, sans-serif;
 	transition: .7s;
 	cursor: pointer;
-	margin-left: rem(10px);
 	&:hover{
 		background-color: darken(#e45028, 20%);
 	}
