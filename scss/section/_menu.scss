@@ -17,10 +17,17 @@
 .menu__title {
   color: #fff;
   font-size: 72px;
-  margin-bottom: 12px;
+  margin-bottom: rem(12px);
   position: absolute;
-  top: 10%;
+  top: 12%;
   left: 10%;
+
+  @include tablets{
+    font-size: 3.54286rem;
+        top: 5%;
+     }
+
+
 }
 .menu-acco__item {
   height: 100%;
@@ -44,7 +51,7 @@
 
 .menu-acco__trigger-text {
   font-family: Gagalin;
-  font-size: 40px;
+  font-size: rem(38px);
   color: #fff;
   text-align: center;
   white-space: nowrap;
@@ -53,22 +60,32 @@
   transform-origin: 0 0;
   left: 50%;
   top: 100%;
-  margin-top: -20px;
+  margin-top: rem(-37px);
 }
 
 
 .menu-acco__content {
 	height: 100%;
 	background: rgba(#2f3234, .93);
-	width: 0;
+	width:0;
 	overflow: hidden;
+
+}
+.menu-acco__content_active{
+width:rem(550px);
+
+  @include tablets{
+    width:0;
+
+     }
+
 }
 
 .menu-acco__text {
-  font-size: 14px;
+  font-size: rem(12px);
   color: #fff;
-  padding: 60px 30px;
+  padding: rem(60px) rem(30px);
   width: 100%;
   line-height: 1.8;
-  display: none;
+  display: block;
 }

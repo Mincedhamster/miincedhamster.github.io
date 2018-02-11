@@ -6,7 +6,18 @@
   background-size: cover;
   position: relative;
  }
+.section__title--team{
+  font-size: 4.54286rem;
 
+   @include tablets{
+     font-size: 3.54286rem;
+     text-align: center;
+
+}
+
+
+
+}
  .team__container{
  	position: absolute;
  	width: 50%;
@@ -18,12 +29,32 @@
  	justify-content: center;
  	align-items: center;
 
+  @include tablets{
+     width: 100%;
+}
+
  }
 
 .team__content{
- width: 72%
+    width: 69%;
+    height: 70%;
+
+
+    @include tablets{
+     width: 100%;
+}
+}
+.team-accordeon{
+  padding-top:0;
+
+
+  @include tablets{
+     display: flex;
+     flex-direction:column;
 }
 
+
+}
 .team-accordeon__content {
   display: flex;
 }
@@ -32,19 +63,39 @@
 }
 .team-accordeon__text {
   color: #fff;
+  max-width: 15rem;
+  margin-top: rem(-20px);
+
+
+  @include tablets{
+    margin-top: -1.42857rem;
+    margin-left: rem(10px);
+    text-align: center;
+}
+
+
 }
 .team-accordeon__img{
 	width: 100px;
 	height: 100px;
+  margin: 0.02857rem 0.7rem;
+
+  @include tablets{
+    margin: 0.02857rem 5rem;
+    margin-bottom: rem(18px);
+}
+
+
 }
 
 .team-accordeon__trigger{
 	display: flex;
-    align-items: center;
-    text-decoration: none;
+  align-items: center;
+  text-decoration: none;
 	color: #fff;
 	font-size: 14px;
 	font-family: Gagalin;
+  margin-bottom: rem(14px);
 
 	&:before {
     content: "";
@@ -55,12 +106,26 @@
     border-bottom-color: 0px;
 
   }
+   @include tablets{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+
 }
 
 .team-accordeon__members{
 	height: 0;
 	overflow: hidden;
 	display: flex;
+
+
+   @include tablets{
+    display: flex;
+    flex-direction: column;
+}
+
+
 }
 
 .team-accordeon__item_active {
@@ -75,4 +140,15 @@
       height: auto;
  
   }
+}
+.team-accordeon__item{
+  margin: 0.9375rem;
+
+  @include tablets{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 }
