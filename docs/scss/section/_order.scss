@@ -68,12 +68,11 @@
   font-size: rem(14px);
   border-radius: rem(5px);
   cursor: pointer;
-  border: rem(1px) solid transparent;
-  border-color: #d1cfcb;
+  border: rem(2px) solid transparent;
   outline: none;
 
    &:focus {
-        border: solid 2px $yellow;
+        border: solid rem(2px) $yellow;
     }
 }
 

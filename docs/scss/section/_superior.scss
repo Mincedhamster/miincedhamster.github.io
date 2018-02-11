@@ -1,6 +1,5 @@
 .superior {
   background-image: url("../img/back/best-bg.png");
-  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -47,12 +46,12 @@
   color: #2f3234;
   padding: 0;
   margin-top: 1.71429rem;
-  margin-bottom: 23px;
+  margin-bottom: rem(23px);
 
   @include phones{
       font-size: 3.5rem;
-      margin-bottom: 30px;
-      margin-top: -3.28571rem;
+      margin-bottom: rem(25px);
+      margin-top: -0.28571rem;
      }
 
      @include tablets {
@@ -93,7 +92,7 @@
 
      @include phones {
     font-size: rem(14px);
-    width: 84%;
+    width: 88%;
     text-align: left;
   }
 }
