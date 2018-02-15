@@ -71,6 +71,9 @@
 	background-color: rgba(240, 140, 51, .7);
 	border-radius: 10px;
 	cursor: pointer;
+	&:hover .burgers__products{
+		display: block;
+	}
 	 @include tablets{
     position: relative;
     top: 0rem;
@@ -114,6 +117,10 @@
     	margin: rem(10px) auto;
     	text-align: center;
     }
+     @include phones{
+     	font-size: 3.54286rem;
+
+     }
 }
 .burgers__right{
 	width: 40%;
@@ -168,8 +175,6 @@
     height: 130%;
     left: rem(-23px);
     top: -1rem;
-
-   
     
 	@include tablets{
 		flex-direction: row;
@@ -180,7 +185,7 @@
 	}
 
 	 @include phones{
-    top: rem(-20px);
+    top: -3.42857rem;
     left: -2.64286rem;
     width: 110%;
     }
@@ -203,3 +208,56 @@
 		background-color: darken(#e45028, 20%);
 	}
 }
+
+.burgers__products{
+	display: none;
+	width: rem(280px);
+	height: 21.57143rem;
+	background-color: #fff;
+	position: absolute;
+	border-radius: 10px;
+	padding: rem(20px);
+	position: absolute;
+    left: rem(89px);
+    opacity: 0.8;
+    @include phones{
+    	left: 5.35714rem;
+    	width: 16.85714rem;
+    	height: 23.57143rem;
+    }
+}
+.burgers__product-name{
+	font-weight: bold;
+}
+.burgers__list{
+	display: flex;
+    flex-direction: column;
+}
+.burgers__row{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: rem(14px);
+	font-family: "Ubuntu";
+	color: rgb(47, 50, 52);
+	line-height: 1.714;
+	text-align: left;
+}
+
+%burgers__product-icon{
+	background-image: url("../img/sprite/burger_products.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 50px;
+
+}
+
+$l: 0px;
+@each $i in (0, 50, 100, 150, 200, 250){
+	.burgers__product-icon_#{$i} {
+		@extend %burgers__product-icon;
+		$length: 0px  - $i;
+		background-position: 1px $length;
+	}
+} 
