@@ -6,21 +6,52 @@
   background-size: cover;
   position: relative;
  }
+.section__title--order{
+  margin-bottom: 2.02429rem;
+  margin-top: 7.14286rem;
+
+  @include tablets{
+   margin-top: 2.14286rem;
+
+     }
+
+     @include tablets{
+      text-align: center;
+      font-size: 3.54286rem;
+
+     }
+}
+ .order__content{
+ flex-direction: column;
+ }
+ 
 .form{
 	color:#fff;
 	display: flex;
-    justify-content: space-around;
+  justify-content: space-between;
+   width: 100%;
+
+  @include tablets{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+     }
+  @include phones{
+ width: 100%;
+
+     }
 
 }
 .form__row{
-	margin-bottom: rem(25px);
+	margin-bottom: 1.01429rem;
 	display: flex;
 }
 
 .form__block {
   display: block;
   flex: 1;
-  margin-right: 20px;
+  margin-right: rem(20px);
    
    &:last-child {
      margin-right: 0;
@@ -37,22 +68,33 @@
   font-size: rem(14px);
   border-radius: rem(5px);
   cursor: pointer;
-  border: rem(1px) solid transparent;
-  border-color: #d1cfcb;
+  border: rem(2px) solid transparent;
   outline: none;
 
    &:focus {
-        border: solid 2px $yellow;
+        border: solid rem(2px) $yellow;
     }
 }
 
 .form__input--active{
    height: rem(98px);
-   margin-bottom: rem(17px);
+   margin-bottom: 0.91429rem;
 }
 
 .form__section{
-	width: 48%;
+	width: 49%;
+
+
+  @include tablets{
+  width: 62%;
+
+     }
+
+
+  @include phones{
+  width: 100%;
+
+     }
 }
 .form__options-radio {
     display: none;
@@ -91,6 +133,12 @@
 .form__options{
 	margin-bottom: rem(17px);
 	display: flex;
+
+  @include phones{
+      display: flex;
+     justify-content: center;
+
+     }
 }
 
 .form__options-type {
@@ -117,7 +165,13 @@
 .form__checkbox {
     display: flex;
     align-items: center;
-    margin-bottom: rem(20px);
+    margin-bottom: 1.02857rem;
+
+    @include phones{
+      display: flex;
+     justify-content: center;
+
+     }
 }
 
 .form__checkbox-visible {
@@ -126,10 +180,43 @@
 
 .form__btns{
   display: flex;
+
+  @include phones{
+      display: flex;
+     justify-content: center;
+
+     }
 }
-.form__submit_clear{
-  margin-left: 10px;
+
+.form__submit-order{
+  background-color: #e45028;
+  padding:0.59439rem 0.8420rem;
+  border-radius: rem(5px);
+  background-color: #e45028;
+  color: #fff;
   text-decoration: none;
+  border: 1px solid transparent;
+  font-size:0.82857rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: .5s; 
+  cursor: pointer;
+  &:hover {
+    background-color: darken($orange, 11%); 
+   }
+}
+
+.form__submit-clear{
+  margin-left: rem(8px);
   font-style: 300;
-  color: $white;
+  background-color: transparent;
+  text-transform: none;
+  color: #fff;
+  border: 1px solid transparent;
+  padding:0.59439rem 0.8420rem;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration:underline;
+   }
 }

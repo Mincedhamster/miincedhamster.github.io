@@ -1,6 +1,5 @@
 .superior {
   background-image: url("../img/back/best-bg.png");
-  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -14,26 +13,50 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .superior__list{
   display: flex;
   justify-content: space-between;
-}
 
+  @include phones {
+    flex-direction: column;
+ }
+
+}
 .superior__item{
   max-width: rem(262px);
+  margin:rem(11px);
   flex:1;
   display: flex;
   flex-direction: column;
+
+  @include phones {
+    display: flex;
+    width: 100%;
+    max-width: rem(262px);
+    margin:auto;
+    flex-direction: row;
+    max-width: initial;
+  }
 
 }
 .section__title--superior {
   color: #2f3234;
   padding: 0;
-  margin-top: -0.5625rem;
-  margin-bottom: 2.07143rem;
-  margin-right: 22px;
+  margin-top: 1.71429rem;
+  margin-bottom: rem(23px);
+
+  @include phones{
+      font-size: 3.5rem;
+      margin-bottom: rem(25px);
+      margin-top: -0.28571rem;
+     }
+
+     @include tablets {
+     margin-right: 0
+ }
 }
 
 .superior__name{
@@ -41,20 +64,41 @@
     font-weight: 500;
     font-style: normal;
     font-size: rem(21px);
-    margin-bottom: rem(18px);
+
+     @include phones{
+      text-align: left;
+     }
+
+
 }
 .superior__img{
-   margin-bottom: 18px;
-    height: 100px;
-    margin-right: 18px
+    height: rem(100px);
+}
+
+.superior__img--active{
+    height: 7.14286rem;
+
+    @include phones{
+      margin-right: 1.42857rem;
+
+ }
 }
 .superior__description p{
     font-family: 'Ubuntu', Arial, sans-serif;
     color: #7e7c7b;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: rem(12px);
+    line-height: rem(24px);
     font-weight: 300;
+
+     @include phones {
+    font-size: rem(14px);
+    width: 88%;
+    text-align: left;
+  }
 }
+
 .superior__item:first-child {
-    margin-right: 9px;
+    margin-right: rem(9px);
 }
+
+ 
