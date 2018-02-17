@@ -7,10 +7,12 @@ const btnOpen = document.querySelector('#js_menu-burger');
 
 btnClose.addEventListener('click', function(){
 	m__nav.classList.toggle('close');
+	document.body.style.overflow = 'visible';
 
 }); 
 
 btnOpen.addEventListener('click', function(){
 	m__nav.classList.toggle('close');
+	document.body.style.overflow = 'hidden';
 });
 
