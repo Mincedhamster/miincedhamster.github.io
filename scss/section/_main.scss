@@ -105,7 +105,7 @@
     }
 
   @include phones {
-    font-size: 50px;
+    font-size: rem(41px);
   }
 }
 
@@ -125,7 +125,7 @@
     }
 
   @include phones {
-    font-size: 61px;
+    font-size: 3.54286rem;
   }
 
 }
@@ -164,8 +164,8 @@
    margin-right:rem(24px);
 
   @include tablets {
-    margin-left: 31%;
-    margin-top: -11%;;
+    margin-top: -11%;
+    width: 68%;
   }
 
   @include phones {
@@ -182,9 +182,92 @@
   height: 1.5rem;
   display: none;
 
+
    @include tablets() {
     display: flex;
     border-radius: rem(1px);
 
+
+
   }
+}
+
+.nav-mobile{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(49,51,50,1);
+  z-index: 1;
+
+
+}
+.nav-mobile__list{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.nav-mobile__item{
+    &:after{
+    @include circle(5px, #fff);
+    display: block;
+    margin: rem(13px) auto;
+    content: "";
+    vertical-align: middle;
+    }
+  &:last-child:after{
+    display: none;
+  }
+}
+.nav-mobile__link{
+  text-decoration: none;
+  color: #fff;
+  font-size: rem(23px);
+  font-family: "Ubuntu";
+  text-transform: uppercase;
+  line-height: 1.667;
+  text-align: center;
+  font-weight: 400;
+}
+.nav-mobile__top{
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding-top: 0.82714rem;
+  width: 95%;
+  margin: 0 auto;
+
+
+  @include tablets, phones{ 
+  justify-content: space-between; 
+  } 
+}
+
+.nav-mobile__close{
+  width: 21px;
+  height: 21px;
+  cursor: pointer;
+  background-image: url("../img/icons/nav_close.png");
+  background-color: transparent;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.close{
+  display: none;
+    z-index: 0;
+  transition: display 2s;
+}
+
+.nav-mobile__logo{
+  margin-right: auto;
 }
