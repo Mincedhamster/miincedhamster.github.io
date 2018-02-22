@@ -32,13 +32,33 @@
 .menu-acco__item {
   height: 100%;
   display: flex;
-
 	&.active {
+
 		.menu-acco__trigger-text {
 		color: $yellow;
 		}
 	}
 }
+.menu_active{
+ 
+ &>.menu-acco__trigger>.menu-acco__trigger-text{
+      color:#f9b43b;
+     }
+  &>.menu-acco__content{
+    width: 550px;
+ }
+
+@include tablets{
+  left: 0;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  &>.menu-acco__content{
+    //width: 80%;
+  }
+  }
+}
+
 
 .menu-acco__trigger {
 	width: rem(70px);
@@ -78,17 +98,21 @@
 	background: rgba(#2f3234, .93);
 	width:0;
 	overflow: hidden;
+  transition: width 2s;
 
 }
+/*
 .menu-acco__content_active{
 width:rem(550px);
 
   @include tablets{
-    width:0;
+
 
      }
+  @include phones{
 
-}
+  }   
+}*/
 
 .menu-acco__text {
   font-size: rem(12px);

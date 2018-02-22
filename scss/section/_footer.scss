@@ -8,9 +8,14 @@
     right: 0;
     top: auto;
     width: 100%;
+    height: rem(70px);
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include phones{
+    height: rem(100px);
+    }
 }
 
 .footer__left{
