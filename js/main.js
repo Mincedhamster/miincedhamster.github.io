@@ -16,3 +16,6 @@ btnOpen.addEventListener('click', function(){
 	document.body.style.overflow = 'hidden';
 });
 
+$('body').on('wheel', '#m__nav', function(e) {
+    e.stopPropagation();
+  });
