@@ -4,8 +4,8 @@ const arLeft = $('#js-arrow__left');
 	const step = 100;
 var nextLeft = 0;
 var currentLeft = 0;
-const maxLeft = -300;
-const maxRight = 300
+const maxLeft = -400;
+const maxRight = 400
 
 
 
