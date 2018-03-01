@@ -63,7 +63,7 @@
     justify-content: space-between;
 }
 .burgers__left{
-	width: 40%;
+	width: 41%;
 	position: relative;
 
 	@include tablets{
@@ -83,6 +83,8 @@
 }
 .burgers__image{
 	position: relative;
+	max-height: 300px;
+
 }
 .burgers__image-js{
 	position: absolute;
@@ -115,6 +117,7 @@
 }
 .burgers__img{
 	padding: 0.72857rem 1.2rem 0;
+
 }
 .burgers__kkal{
 	position: absolute;
@@ -141,7 +144,7 @@
     	text-align: center;
     }
      @include phones{
-     	font-size: 3.54286rem;
+     	font-size: 2.54286rem;
 
      }
 }
@@ -171,7 +174,9 @@
 	.burgers__up{
 		font-size: 4.07143rem;
 	}
-	
+	@include phones{
+		 font-size: 0.77143rem;
+	}
 }
 .burgers__btn-slider{
 	background-color: #e45028;
@@ -181,6 +186,10 @@
 	margin-left: rem(25px);
 	font-size: 13px;
   	font-family: "Ubuntu";
+
+  	@include phones{
+  	font-size: 12px;
+  	}
 }
 .burgers__down{
 	vertical-align: bottom;
@@ -195,20 +204,20 @@
 	flex-direction: column;
 	position: absolute;
     justify-content: space-between;
-    height: 130%;
+    height: 125%;
     left: rem(-23px);
     top: -1rem;
     
 	@include tablets{
 		flex-direction: row;
 		width: 120%;
-		top: -3.5rem;
+		top: -3rem;
 		align-items: space-between;
 		left: -3.64286rem;
 	}
 
 	 @include phones{
-    top: -3.42857rem;
+    top: -4.02857rem;
     left: -1.64286rem;
     width: 100%;
 
@@ -245,8 +254,8 @@
     left: 5.35714rem;
     opacity: 0.8;
     @include phones{
-    	left: 5.35714rem;
-    	width: 16.85714rem;
+	    left: 1.35714rem;
+	    width: 14.85714rem;
     	height: 23.57143rem;
     }
 }
