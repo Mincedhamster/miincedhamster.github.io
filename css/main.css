@@ -1584,7 +1584,7 @@ width:rem(550px);
   justify-content: space-between; }
 
 .burgers__left {
-  width: 40%;
+  width: 41%;
   position: relative; }
   @media screen and (max-width: 768px) {
     .burgers__left {
@@ -1597,7 +1597,8 @@ width:rem(550px);
   max-width: 100%; }
 
 .burgers__image {
-  position: relative; }
+  position: relative;
+  max-height: 300px; }
 
 .burgers__image-js {
   position: absolute;
@@ -1654,7 +1655,7 @@ width:rem(550px);
       text-align: center; } }
   @media screen and (max-width: 480px) {
     .section__title--burgers {
-      font-size: 3.54286rem; } }
+      font-size: 2.54286rem; } }
 
 .burgers__right {
   width: 40%; }
@@ -1681,6 +1682,9 @@ width:rem(550px);
   text-align: left; }
   .burgers__cost .burgers__up {
     font-size: 4.07143rem; }
+  @media screen and (max-width: 480px) {
+    .burgers__cost {
+      font-size: 0.77143rem; } }
 
 .burgers__btn-slider {
   background-color: #e45028;
@@ -1690,6 +1694,9 @@ width:rem(550px);
   margin-left: 1.78571rem;
   font-size: 13px;
   font-family: "Ubuntu"; }
+  @media screen and (max-width: 480px) {
+    .burgers__btn-slider {
+      font-size: 12px; } }
 
 .burgers__down {
   vertical-align: bottom; }
@@ -1714,7 +1721,7 @@ width:rem(550px);
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  height: 130%;
+  height: 125%;
   left: -1.64286rem;
   top: -1rem; }
   @media screen and (max-width: 768px) {
@@ -1724,14 +1731,14 @@ width:rem(550px);
       -ms-flex-direction: row;
       flex-direction: row;
       width: 120%;
-      top: -3.5rem;
+      top: -3rem;
       -webkit-box-align: space-between;
       -ms-flex-align: space-between;
       align-items: space-between;
       left: -3.64286rem; } }
   @media screen and (max-width: 480px) {
     .burgers__menu {
-      top: -3.42857rem;
+      top: -4.02857rem;
       left: -1.64286rem;
       width: 100%; } }
 
@@ -1765,8 +1772,8 @@ width:rem(550px);
   opacity: 0.8; }
   @media screen and (max-width: 480px) {
     .burgers__products {
-      left: 5.35714rem;
-      width: 16.85714rem;
+      left: 1.35714rem;
+      width: 14.85714rem;
       height: 23.57143rem; } }
 
 .burgers__product-name {
