@@ -63,7 +63,7 @@ ul {
 
 .wrapper {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: relative;
   overflow: hidden; }
 
@@ -1421,7 +1421,7 @@ width:rem(550px);
   align-items: center; }
   @media screen and (max-width: 480px) {
     .footer {
-      height: 8.57143rem; } }
+      height: 9.57143rem; } }
 
 .footer__left {
   display: inline-block; }
