@@ -1,0 +1,51 @@
+html {
+  @include tablets {
+    font-size: rem(13px);
+  }
+
+  @include phones {
+    font-size: rem(12px);
+  }
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: rem(12px);
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 1.42;
+  background-color: #2f3234;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+}
+
+*, *::before, *::after {
+  box-sizing: border-box; 
+}
+
+ body{
+  height: 100vh; 
+  width: 100vw;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+}
+
+.visuallyhidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  overflow: hidden; }

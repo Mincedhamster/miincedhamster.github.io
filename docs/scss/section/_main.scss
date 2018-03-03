@@ -144,7 +144,7 @@
   }
 
   @include phones(){
-    width: 96%;
+    width: 100%;
     margin-top: 0;
     text-align: center;
    }
@@ -164,7 +164,7 @@
    margin-right:rem(24px);
 
   @include tablets {
-    margin-top: -28%;
+    margin-top: -11%;
     width: 68%;
   }
 

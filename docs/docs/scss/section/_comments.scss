@@ -1,0 +1,236 @@
+
+.comments{
+    background-color: #2f3234;
+}
+
+.comments__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.comments__item {
+    overflow: hidden;
+    height: 50%;
+    width: 25%;
+    position: relative;
+    filter: grayscale(100%);
+
+    &:hover .comments__textblock{
+    opacity: 1;
+    background-color: rgba(20,20,20,0.7);
+    transition: 0.7s;
+    }
+
+    @include tablets{
+    width:50%;
+    height: 25%;
+
+    }
+}
+.comments__photo {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.comments__name {
+    font-family: 'Gagalin';
+    text-transform: uppercase;
+    margin-bottom: rem(20px);
+
+    @include tablets{
+     margin-bottom: -0.57143rem;
+     font-size: rem(14px);
+  }
+
+
+    @include phones{
+    font-size: rem(20px);
+    line-height: 1.42;
+    margin-bottom: rem(20px);
+  }
+
+}
+
+.comments__text {
+    margin-bottom: rem(20px);
+    line-height: rem(24px);
+
+    @include tablets{
+    margin-bottom: 0.42857rem;
+    line-height: 1.51429rem;
+     }
+
+    @include phones{
+     display: none;
+ }
+}
+
+.comments__textblock {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding: rem(47px) rem(20px);
+    padding: rem(41px) rem(17px);
+    color: #fff;
+    transition: opacity 0.5s;
+
+     @include tablets{
+     text-align: center;
+      padding: 0.92857rem 1.21429rem;
+    }
+    @include phones{
+      padding: 2.42857rem 1.21429rem;
+    }
+}
+
+.comments__textblock:hover{
+    font-family: ubuntu, Verdana, Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: rem(21px);
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+.comments__link {
+  font-size: rem(13px);
+  font-weight: 500;
+  line-height: 1.42;
+  min-width: rem(98px);
+  padding: rem(10px) rem(17px);
+  border-radius: rem(5px);
+  background-color: #2f3234;
+  color: #fff;
+  text-decoration: none;
+  font-size: rem(12px);
+  font-weight: 400;
+  line-height: 1.42;
+  text-transform: uppercase;
+  transition: .5s; 
+  &:hover {
+    background-color: darken($gray, 10%);
+    }
+
+  @include phones{
+     display: none;
+}
+
+}
+
+.comments__link-phone{
+  display: none;
+
+   @include phones{
+    display: inline-block;
+    font-size: rem(13px);
+    font-weight: 500;
+    line-height: 1.42;
+    min-width: rem(98px);
+    padding: rem(10px) rem(17px);
+    border-radius: rem(5px);
+    background-color: #2f3234;
+    color: #fff;
+    text-decoration: none;
+    font-size: rem(12px);
+    font-weight: 400;
+    line-height: 1.42;
+    text-transform: uppercase;
+    transition: .5s; 
+    
+    &:hover {
+      background-color: darken($gray, 10%);
+      }
+     
+  }
+
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(47, 50, 52, 0.8);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.overlay__content{
+  border-radius: rem(10px);
+  width: 470px;
+  min-height: 260px;
+  position: relative;
+  background-color: #fff;
+  padding: rem(20px);
+}
+
+.overlay__title{
+  font-size: rem(14px);
+  font-family: "Gagalin";
+  color: rgb(47, 50, 52);
+  line-height: 2.008;
+  text-align: left;
+  margin-bottom: rem(15px);
+ }
+
+.overlay__text{
+  font-size: rem (14px);
+  font-family: "Ubuntu";
+  color: rgb(47, 50, 52);
+  line-height: 1.714;
+}
+
+.overlay__close{
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: rem(14px);
+  top: rem(17px);
+  background: url(../img/icons/comments_close.svg);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  fill:#e45028;
+}
+
+
+@for $i from 1 through 8 {
+  .comments__item_#{$i}{
+    @extend %comments__item;
+    background-image: url("../img/reviews/reviews_img_#{$i}.png");
+  }
+}
+
+@each $d in comments__btn, comments__description, comments__text{
+  %comments__item:hover .#{$d}{
+    display: block;
+  }
+}
+  
+@each $d in comments__btn, comments__description{
+  @include phones{
+  %coment__item:hover .#{$d}{
+    display: block;
+    }
+  }
+} 
+
+.form__overlay_content{
+  text-align: center;
+  min-height: 0;
+  font-size: rem(30px);
+}

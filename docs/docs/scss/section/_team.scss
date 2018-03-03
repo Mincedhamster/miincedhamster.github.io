@@ -1,0 +1,166 @@
+.team {
+  background: url("../img/back/team.jpg");
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ }
+.section__title--team{
+  font-size: 4.54286rem;
+
+   @include tablets{
+     font-size: 3.54286rem;
+     text-align: center;
+
+}
+
+
+
+}
+ .team__container{
+ 	position: absolute;
+ 	width: 50%;
+ 	top: 0;
+ 	bottom: 0;
+ 	right: 0;
+ 	background: rgba(#2f3234, .93);
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+
+  @include tablets{
+     width: 100%;
+}
+
+ }
+
+.team__content{
+    width: 69%;
+    height: 70%;
+
+
+    @include tablets{
+     width: 100%;
+     height: 65%;
+}
+}
+.team-accordeon{
+  padding-top:0;
+
+
+  @include tablets{
+     display: flex;
+     flex-direction:column;
+}
+
+
+}
+.team-accordeon__content {
+  display: flex;
+}
+.team-accordeon__content p{
+	margin: auto;
+}
+.team-accordeon__text {
+  color: #fff;
+  max-width: 15rem;
+  margin-top: -1.02857rem;
+
+  @include tablets{
+    margin-top: -1.42857rem;
+    margin-left: rem(10px);
+    text-align: center;
+}
+
+
+}
+.team-accordeon__img{
+	width: 100px;
+	height: 100px;
+  margin: 0.02857rem 0.7rem;
+
+  @include tablets{
+    margin: 0.02857rem 5rem;
+    margin-bottom: rem(18px);
+}
+
+
+}
+
+.team-accordeon__trigger{
+	display: flex;
+  align-items: center;
+  text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+	font-family: Gagalin;
+  margin-bottom: rem(14px);
+
+   @include tablets{
+    font-size: 18px;
+    margin-bottom: 0;
+};
+    @include phones{
+   font-size: 26px;
+};
+	&:before {
+    content: "";
+    height: 0;
+    width: 0;
+    border: 6px solid transparent;
+    border-top-color: $yellow;
+    border-bottom-color: 0px;
+    transition: transform .6s;
+    transform: translate(-50%,18%);
+  };
+};
+
+.team-accordeon__members{
+	height: 0;
+	overflow: hidden;
+	display: flex;
+  transition: 1s;
+
+
+   @include tablets{
+    display: flex;
+    flex-direction: column;
+}
+
+
+}
+
+.team-accordeon__item_active {
+
+	.team-accordeon__trigger {
+    color: $yellow;
+
+	    &:before {
+	     transform: rotate(-180deg) translate(78%,31%);
+	    }
+  	}
+    .team-accordeon__members {
+      height: 108px;
+      transition:1s;
+
+       @include tablets{
+        height: 190px;
+       }
+
+
+ 
+  }
+}
+.team-accordeon__item{
+   transition: height 1s;
+  margin: 0.9375rem;
+
+  @include tablets{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+}
